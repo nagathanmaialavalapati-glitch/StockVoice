@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockVoice - Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">S</div>
+                <div>
+                    <h2>StockVoice</h2>
+                    <span>Smart Inventory</span>
+                </div>
+            </div>
+
+            <nav>
+
+                <a href="#" class="nav-item active">
+                    <span>⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>▣</span>
+                    Inventory
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>🎤</span>
+                    Voice Entry
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>⚠</span>
+                    Alerts
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>↶</span>
+                    History
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="user">
+                    <div class="avatar">U</div>
+                    <div>
+                        <strong>Business Owner</strong>
+                        <small>My Store</small>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+                    <h1>Good morning 👋</h1>
+                    <p>Here's what's happening with your inventory today.</p>
+                </div>
+
+                <button class="profile-btn">
+                    U
+                </button>
+
+            </header>
+
+
+            <!-- Voice Action -->
+            <section class="voice-banner">
+
+                <div class="voice-content">
+
+                    <div class="mic-circle">
+                        🎤
+                    </div>
+
+                    <div>
+                        <h2>Manage stock with your voice</h2>
+                        <p>
+                            Say things like "Add 10 bags of rice"
+                            or "Remove 5 bottles of oil".
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="voice-btn">
+                    Start Voice Entry
+                </button>
+
+            </section>
+
+
+            <!-- Statistics -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-icon">📦</div>
+                    <div>
+                        <p>Total Products</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div>
+                        <p>Total Stock</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+
+                <div class="stat-card warning">
+                    <div class="stat-icon">⚠️</div>
+                    <div>
+                        <p>Low Stock</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🔄</div>
+                    <div>
+                        <p>Today's Updates</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Inventory Overview -->
+            <section class="content-grid">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Inventory Overview</h2>
+                            <p>Your recently updated products</p>
+                        </div>
+
+                        <button class="add-btn">
+                            + Add Product
+                        </button>
+
+                    </div>
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            📦
+                        </div>
+
+                        <h3>No products yet</h3>
+
+                        <p>
+                            Add your first product to start managing
+                            your inventory.
+                        </p>
+
+                        <button class="primary-btn">
+                            Add Your First Product
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Actions -->
+                <div class="panel quick-panel">
+
+                    <h2>Quick Actions</h2>
+
+                    <button class="quick-action">
+                        <span>➕</span>
+                        <div>
+                            <strong>Add Product</strong>
+                            <small>Add a new item to inventory</small>
+                        </div>
+                    </button>
+
+                    <button class="quick-action">
+                        <span>🎤</span>
+                        <div>
+                            <strong>Voice Entry</strong>
+                            <small>Update stock using your voice</small>
+                        </div>
+                    </button>
+
+                    <button class="quick-action">
+                        <span>⚠️</span>
+                        <div>
+                            <strong>View Alerts</strong>
+                            <small>Check low-stock products</small>
+                        </div>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
